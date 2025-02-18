@@ -23,9 +23,9 @@ namespace StatisticArray
             return arr.Reverse().ToArray();
         }
 
-        public static void PrintArr(int[]arr)
+        public static void PrintGreater(int[]arr)
         {
-            Console.WriteLine(string.Join(", ",arr));
+            Console.WriteLine(string.Join(", ", arr.Where(x=>x>5).ToArray()));
         }
     }
 }
